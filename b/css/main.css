@@ -1,0 +1,301 @@
+@font-face {
+	font-family: Inter;
+	src: url(../fonts/Inter/Inter_18pt-Medium.woff2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: NeosBold;
+	src: url(../fonts/TTNeorisTrial/TT\ Neoris\ Trial\ Bold.woff2);
+	font-display: swap;
+}
+@font-face {
+	font-family: NeosMedium;
+	src: url(../fonts/TTNeorisTrial/TT\ Neoris\ Trial\ Medium.woff2);
+	font-display: swap;
+}
+@font-face {
+	font-family: NeosRegular;
+	src: url(../fonts/TTNeorisTrial/TT\ Neoris\ Trial\ Regular.woff2);
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f3eee8;
+}
+
+.container {
+	max-width: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 17px;
+	padding-right: 17px;
+}
+
+.header {
+	padding-top: 0;
+	padding-bottom: 8px;
+}
+.header__container {
+	padding: 11px 30px 16px 30px;
+	background-color: white;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0px 4px 6.6px 0px #00000026;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__text {
+	font-family: Inter;
+	font-weight: 500;
+	letter-spacing: 0%;
+	background: var(--color-black-80, #000000cc);
+	color: transparent;
+	background-clip: text;
+}
+
+.hero {
+	padding-top: 8px;
+	padding-bottom: 22px;
+}
+.title {
+	font-family: NeosBold;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 4px;
+}
+
+.title span {
+	color: #674529;
+}
+
+.hero__text {
+	font-family: NeosMedium;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
+	text-align: center;
+	margin-bottom: 16px;
+	color: #000000;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	max-width: 282px;
+	width: 100%;
+	border: 0.5px solid #e94f11;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px 0px 6px 12px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.flex__text {
+	font-family: NeosMedium;
+	font-weight: 500;
+	font-style: Medium;
+	font-size: 16px;
+	line-height: 130%;
+	letter-spacing: 0%;
+	padding-left: 4px;
+}
+.bantik {
+	object-fit: cover;
+	position: absolute;
+	right: 0;
+	top: -12px;
+}
+
+.center {
+	padding-top: 4px;
+	padding-bottom: 100px;
+}
+
+.gradient {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.gradient::before {
+	content: '';
+	position: absolute;
+	bottom: -320px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 380px;
+	height: 380px;
+	background: radial-gradient(circle, #6d3c14 0%, rgba(109, 60, 20, 0) 100%);
+	filter: blur(80px);
+	z-index: 1;
+	opacity: 0.8;
+}
+
+.logo {
+	position: relative;
+	z-index: 2;
+	display: block;
+	margin-bottom: -50px;
+}
+
+.center__bottom {
+	background-color: white;
+	z-index: 11;
+	position: absolute;
+	max-width: 350px;
+	width: 100%;
+	margin-top: -70px;
+	padding: 14px 14px 14px 14px;
+	border-radius: 20px;
+}
+
+.timer-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 400px; /* O'zingga qarab mosla */
+	margin: 0 auto;
+}
+
+.timer-container::before {
+	content: '';
+	flex: 1;
+	height: 1px;
+	background: linear-gradient(
+		to left,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.8) 100%
+	);
+	margin-bottom: -20px;
+}
+
+/* O'ng tomondagi chiziq (Chapga qarab to'qlashadi) */
+.timer-container::after {
+	content: '';
+	flex: 1;
+	height: 1px;
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.8) 100%
+	);
+	margin-bottom: -20px;
+}
+.btn {
+	font-family: NeosBold;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 323px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+	background: linear-gradient(90deg, #674529 0%, #885a35 51.92%, #674529 100%);
+	box-shadow: 0px 4px 0px 0px #4d331d;
+	padding: 25px 0;
+	border-radius: 20px;
+	border: none;
+}
+.timer__text {
+	font-family: NeosBold;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+
+.timer__text span {
+	font-family: NeosMedium;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #2b2b2b;
+	color: #ffffff;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	width: 27px;
+	height: 32px;
+}
+
+.bottom {
+}
+.bottom__title {
+	font-family: NeosBold;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+	color: #000000;
+}
+.bottom__flex {
+  display: flex;
+  align-items: flex-start; 
+  gap: 15px; 
+  max-width: 341px;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.flex__title {
+  font-family: NeosBold;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 58px;
+}
+
+.tiket {
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  transform: translateY(-50%);
+}
+
+.bottom__text {
+  font-family: NeosRegular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 261px;
+  width: 100%;
+  padding-top: 5px; 
+}
