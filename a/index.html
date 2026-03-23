@@ -6,7 +6,318 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rus tili Zinnuza</title>
   <style>
-    body{background-color: #000000;} *{margin:0;padding:0;box-sizing:border-box}.container{max-width:390px;margin-left:auto;margin-right:auto;padding-left:17px;padding-right:17px}.hero{background-color:#000000;max-width:390px;margin-left:auto;margin-right:auto;padding-bottom:32px}.hero__italic{font-family:Italianno;font-weight:400;font-size:34px;line-height:100%;text-align:center;color:#ffffff;margin-bottom:16px}.hero__title{font-family:Bebas Neue;font-weight:400;font-size:clamp(30px, 4vw, 38px);line-height:100%;text-align:center;text-transform:uppercase;background:linear-gradient(90deg, #ffd287 0%, #ffe7ab 50%, #ffd287 100%);background-clip:text;color:transparent;margin-bottom:5px}.hero__text{font-family:Inter;font-weight:400;font-size:18px;line-height:145%;text-align:center;color:white}.hero__inner{position:relative}.hero__left{position:absolute;right:-10px;top:30px;border-left:1px solid #ffffff;padding-left:5px}.hero__left__text{font-family:Inter;font-weight:400;font-size:14px;letter-spacing:0%;color:#ffe9a6}.hero__left__text span{color:#ffffff}.hero__logo{display:flex;align-items:center;margin-left:auto;margin-right:auto}.hero__right{position:absolute;bottom:180px;left:-2px;border-left:1px solid #ffffff;padding-left:5px}.hero__right__text{font-family:Inter;font-weight:400;font-size:14px;line-height:130%;color:#ffe9a6}.hero__right__text span{color:#ffffff}.hero__btn{font-family:'Bebas Neue' , sans-serif;font-weight:400;font-size:34px;line-height:120%;text-align:center;text-transform:uppercase;color:#000000;max-width:332px;width:100%;padding:24px 0 20px 0;cursor:pointer;border:none;border-radius:12px;background:linear-gradient(180deg, #ffd982 0%, #f7c05d 50%, #ffd982 100%);display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto;box-shadow:0px 4px 0px #c68e2e, 0px 4px 24px 0px #ffe9a68c;transition:all 0.2s ease}.bottom{padding-left:17px;padding-right:17px}.bottom__container{max-width:317px;width:100%;margin-left:auto;margin-right:auto;background-color:#2b2b2b;border:1px solid;border:1px solid transparent;border-radius:20px;background-image:linear-gradient(#2b2b2b, #2b2b2b), linear-gradient(to bottom, #ffdf70, #ffe9a6, #feda7b);background-origin:border-box;background-clip:padding-box, border-box;padding:10px 12px 1px 18px;margin-bottom:32px}.bottom__title{font-family:Inter;font-weight:700;font-size:16px;line-height:100%;text-transform:uppercase;color:#ffffff;text-align:center;margin-bottom:4px}.bottom__row{display:flex;align-items:center;justify-content:space-between}.bottom__text{font-family:Inter;font-weight:400;font-size:clamp(14px, 4vw, 16px);color:#ffffff}.place{padding-left:17px;padding-right:17px}.place__container{margin-top:32px;position:relative;border:1px dashed white;max-width:317px;width:100%;margin-left:auto;margin-right:auto;border-radius:20px}.clock{position:absolute;object-fit:cover;left:-13px;top:2px}.place__row__title{padding-top:16px;font-family:Inter;font-weight:700;font-size:18px;line-height:120%;text-align:center;color:#ffffff;margin-bottom:8px}.place__row__col__text span{font-family:Inter;font-weight:700;font-size:22px;line-height:120%;text-align:center;background:linear-gradient( 229.81deg, #ffdf70 0.91%, #ffe9a6 47.68%, rgba(255, 223, 112, 0.831373) 94.44% );width:40px;height:39px;padding:0;border-radius:10px;color:black;display:flex;align-items:center;justify-content:center}.place__row__col__text{font-family:Inter;font-weight:700;font-size:22px;line-height:120%;background:linear-gradient( 229.81deg, #ffdf70 0.91%, #ffe9a6 47.68%, rgba(255, 223, 112, 0.831373) 94.44% );background-clip:text;color:transparent;display:flex;align-items:center;justify-content:center;gap:2px;margin-bottom:10px}.place__register{font-family:Inter;font-weight:400;font-size:12px;line-height:120%;text-align:center;color:#ffffff;margin-bottom:16px}.place__button{font-family:'Bebas Neue' , sans-serif;font-weight:400;font-size:22px;line-height:120%;text-align:center;text-transform:uppercase;color:#000000;max-width:242px;width:100%;padding:17px 0 14px 0;cursor:pointer;border:none;border-radius:12px;background:linear-gradient(180deg, #ffd982 0%, #f7c05d 50%, #ffd982 100%);display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto;box-shadow:0px 4px 0px #c68e2e, 0px 4px 24px 0px #ffe9a68c;transition:all 0.2s ease;margin-bottom:16px}.fighter{object-fit:cover;position:absolute;right:clamp(-12px, 3vw, -12px);top:75px}.title{padding-top:27px;font-family:Bebas Neue;font-weight:400;font-size:40px;line-height:120%;text-align:center;text-transform:uppercase;color:#ffffff}.card{text-align:center;margin-bottom:61px;padding-left:17px;padding-right:17px}
+    body {
+      background-color: #000
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    .container {
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 17px;
+      padding-right: 17px
+    }
+
+    .hero {
+      background-color: #000;
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 32px
+    }
+
+    .hero__container {
+      padding-top: 13px;
+      padding-bottom: 32px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .9) 0, rgba(0, 0, 0, 0) 50%), linear-gradient(0deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 40%), url(images/hero/flag.avif);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat
+    }
+
+    .hero__italic {
+      font-family: Italianno;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 100%;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .hero__title {
+      font-family: Bebas Neue;
+      font-weight: 400;
+      font-size: clamp(30px, 4vw, 38px);
+      line-height: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ffd287 0, #ffe7ab 50%, #ffd287 100%);
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 5px
+    }
+
+    .hero__text {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 145%;
+      text-align: center;
+      color: #fff
+    }
+
+    .hero__inner {
+      position: relative
+    }
+
+    .hero__left {
+      position: absolute;
+      right: -10px;
+      top: 30px;
+      border-left: 1px solid #fff;
+      padding-left: 5px
+    }
+
+    .hero__left__text {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0;
+      color: #ffe9a6
+    }
+
+    .hero__left__text span {
+      color: #fff
+    }
+
+    .hero__logo {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .hero__right {
+      position: absolute;
+      bottom: 180px;
+      left: -2px;
+      border-left: 1px solid #fff;
+      padding-left: 5px
+    }
+
+    .hero__right__text {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: #ffe9a6
+    }
+
+    .hero__right__text span {
+      color: #fff
+    }
+
+    .hero__btn {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000;
+      max-width: 332px;
+      width: 100%;
+      padding: 24px 0 20px 0;
+      cursor: pointer;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #ffd982 0, #f7c05d 50%, #ffd982 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 0 #c68e2e, 0 4px 24px 0 #ffe9a68c;
+      transition: all .2s ease
+    }
+
+    .bottom {
+      padding-left: 17px;
+      padding-right: 17px
+    }
+
+    .bottom__container {
+      max-width: 317px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #2b2b2b;
+      border: 1px solid;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      background-image: linear-gradient(#2b2b2b, #2b2b2b), linear-gradient(to bottom, #ffdf70, #ffe9a6, #feda7b);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      padding: 10px 12px 1px 18px;
+      margin-bottom: 32px
+    }
+
+    .bottom__title {
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 4px
+    }
+
+    .bottom__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .bottom__text {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: clamp(14px, 4vw, 16px);
+      color: #fff
+    }
+
+    .place {
+      padding-left: 17px;
+      padding-right: 17px
+    }
+
+    .place__container {
+      margin-top: 32px;
+      position: relative;
+      border: 1px dashed #fff;
+      max-width: 317px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px
+    }
+
+    .clock {
+      position: absolute;
+      object-fit: cover;
+      left: -13px;
+      top: 2px
+    }
+
+    .place__row__title {
+      padding-top: 16px;
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 8px
+    }
+
+    .place__row__col__text span {
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 120%;
+      text-align: center;
+      background: linear-gradient(229.81deg, #ffdf70 .91%, #ffe9a6 47.68%, rgba(255, 223, 112, .831373) 94.44%);
+      width: 40px;
+      height: 39px;
+      padding: 0;
+      border-radius: 10px;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .place__row__col__text {
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 120%;
+      background: linear-gradient(229.81deg, #ffdf70 .91%, #ffe9a6 47.68%, rgba(255, 223, 112, .831373) 94.44%);
+      background-clip: text;
+      color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      margin-bottom: 10px
+    }
+
+    .place__register {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .place__button {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000;
+      max-width: 242px;
+      width: 100%;
+      padding: 17px 0 14px 0;
+      cursor: pointer;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #ffd982 0, #f7c05d 50%, #ffd982 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 0 #c68e2e, 0 4px 24px 0 #ffe9a68c;
+      transition: all .2s ease;
+      margin-bottom: 16px
+    }
+
+    .fighter {
+      object-fit: cover;
+      position: absolute;
+      right: clamp(-12px, 3vw, -12px);
+      top: 75px
+    }
+
+    .title {
+      padding-top: 27px;
+      font-family: Bebas Neue;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff
+    }
+
+    .card {
+      text-align: center;
+      margin-bottom: 61px;
+      padding-left: 17px;
+      padding-right: 17px
+    }
   </style>
   <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
   <noscript>
@@ -27,11 +338,11 @@
           <p class="hero__left__text">25-26-27-Mart <br> <span>Kunlari</span></p>
         </div>
         <img src="./images/hero/hero__logo.avif" alt="HeroLogo" class="hero__logo" width="250" height="311"
-          fetchpriority="high" decoding="async">  
+          fetchpriority="high" decoding="async">
         <div class="hero__right">
           <p class="hero__right__text">20:30 <br> <span>Vaqti</span></p>
         </div>
-        <button class="hero__btn">bepul qatnashish</button>
+        <button class="hero__btn" id="open">bepul qatnashish</button>
       </div>
     </div>
     <div class="bottom">
@@ -43,7 +354,7 @@
           <p class="bottom__text">Hayajonlanmasdan
             <br> rus tilida erkin gaplashish uchun 5 ta metodikam
           </p>
-      </div>
+        </div>
       </div>
     </div>
     <div class="place">
@@ -58,7 +369,7 @@
               </p>
             </div>
             <p class="place__register">BEPUL Ro’yxatdan o’tishga ulguring!</p>
-            <button class="place__button">Bepul qatnashish</button>
+            <button class="place__button" id="open">Bepul qatnashish</button>
           </div>
         </div>
         <img src="./images/hero/reaksiya.avif" alt="fighter" class="fighter" width="25" height="32" loading="fighter">
@@ -68,13 +379,61 @@
     <h2 class="title">jonli darsda siz:</h2>
     <div class="card">
       <img src="./images/hero/card__img.svg" alt="" class="">
-      <button class="hero__btn">bepul qatnashish</button>
+      <button class="hero__btn" id="open">bepul qatnashish</button>
     </div>
   </section>
 
+  <!-- Modal -->
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
+        </div>
 
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+          <div class="phone-input-container">
+            <button type="button" class="selected-country" id="selectedCountry">
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+            <div class="phone-field" style="flex: 1;">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
+            </div>
+          </div>
+          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+        </div>
 
-  <script defer src="./js/main.js"></script>
+        <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/phoneFormatter.js"></script>
+  <script src="./js/app.js"></script>
 
 </body>
 
